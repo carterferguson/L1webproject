@@ -1,0 +1,66 @@
+<!doctype html>
+
+
+<head>
+    <title>Too Long; Didn't Read</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <script>
+        setInterval(imgChanger, 3000)
+        var imgs = ['images/no1.jpg', 'images/no2.png', 'images/no3.jpg']
+
+        var words = ['Tank line movong through the middle east', 'Tank charge demonstration', 'military parade in the capital of Moscow']
+
+        var i = 0;
+
+        function imgChanger() {
+            document.getElementById('image1').src = imgs[i];
+            document.getElementById('words').innerHTML = words[i];
+            i++;
+            if (i >= imgs.length) {
+                i = 0;
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div class="main">
+
+
+        <nav>
+            <a class="two" href="index.html">LATEST NEWS</a>
+            <a class="one " href="Gallery.html">SUPPORT US</a>
+            <a class="java active" href="java.html">TL;DR</a>
+
+        </nav>
+
+        <section>
+            <h1></h1>
+
+
+            <img id="image1" src="images/no1.jpg">
+            <p id="words"></p>
+           
+
+
+        </section>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
